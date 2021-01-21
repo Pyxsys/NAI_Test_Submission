@@ -1,0 +1,13 @@
+[FROM "desc `ADMIN`;"]
+    Field	Type	    Null	Key	    Default     Extra
+    id	    int	        NO	    PRI	    NULL	    auto_increment
+    name	varchar(5)	NO		        NULL
+
+[FROM "desc `APILOG`;"]
+    Field	        Type	    Null	Key	    Default	    Extra
+    event_id	    int	        NO	    PRI	    NULL	    auto_increment
+    admin_id	    int	        NO	    MUL	    NULL
+    call_date	    date	    YES		        curdate()	DEFAULT_GENERATED
+    call_time	    time	    YES		        curtime()	DEFAULT_GENERATED
+    result	        varchar(7)	NO		        NULL
+    error_count	    int	        NO		        NULL

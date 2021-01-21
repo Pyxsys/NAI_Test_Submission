@@ -1,0 +1,5 @@
+Runtime: 6ms
+2/3 tests passed.
+
+testGetServlet(TestSuite): expected:<{"worker_name":"p2_pc","id":"0","cpu_available":48,"cpu_inUse":0,"ram_available":125900000,"ram_inUse":1726000,"vmem_available":261900000,"vmem_inUse":1726000,"gpu_name":"GeForce RTX 2070","gpu_available":8000000,"gpu_inUse":0}> but was:<null>
+testSave2Csv(TestSuite): expected:<[]> but was:<[API_CALL,API_KEY,API_VALUE]>
